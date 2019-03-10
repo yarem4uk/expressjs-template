@@ -13,5 +13,9 @@ export default () => {
   app.use(adminRoutes);
   app.use(shopRoutes);
 
+  app.use((req, res, next) => {
+    res.send('<h1>This is error page</h1>');
+  });
+
   return app;
 };

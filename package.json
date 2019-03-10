@@ -35,5 +35,11 @@
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
     "jest": "^24.1.0",
     "jest-cli": "^24.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3"
   }
 }

@@ -1,0 +1,22 @@
+extends layouts/main-layout
+
+block styles
+  link(rel="stylesheet" href="/assets/css/product.css")
+
+block content
+  main
+    if products.length > 0
+      div.grid
+        each product in products
+          article.card.product-item
+            header.card__header
+              h1.product__title Great book
+            div.card__image
+              img(src="http://www.superoffice.ua/img/catalog/item_578.jpg", alt="A book")
+            div.card__content
+              h2.product__price $19.99
+              p.product__description Consectetur vitae dolores nemo praesentium quasi Doloribus repudiandae magni dolores accusamus.
+            div.card__action
+              button.btn Add to cart
+    else 
+      h1 No Products 
